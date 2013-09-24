@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="portletB/script/app.js"></script>
+    <script type="text/javascript" src="portletB/script/controllers.js"></script>
+</head>
+
+<body>
+
+<h1>
+    <small>portletB</small>
+</h1>
+
+<div ui-view="portletB"></div>
+
+<script>
+    angular.element(document).ready(function () {
+        var div = document.getElementById('portletB');
+        angular.bootstrap(div, ['portletB']);
+    });
+</script>
+
+</body>
+</html>
