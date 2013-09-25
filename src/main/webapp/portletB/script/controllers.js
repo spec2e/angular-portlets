@@ -10,9 +10,13 @@ portletB.controllers.BeginCtrl = function($scope, $state) {
     };
 };
 
-portletB.controllers.NextCtrl = function($scope) {
+portletB.controllers.NextCtrl = function($scope, $state) {
     log('portletB-next');
     $scope.whoAmI = 'portletB-next';
+
+    $scope.begin = function() {
+        $state.go('portletB-begin');
+    };
 };
 
 

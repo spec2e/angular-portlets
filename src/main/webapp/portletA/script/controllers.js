@@ -18,9 +18,12 @@ portletA.controllers.BeginCtrl = function($scope, $state) {
     };
 };
 
-portletA.controllers.NextCtrl = function($scope) {
+portletA.controllers.NextCtrl = function($scope, $state) {
     log('portletA.NextCtrl');
     $scope.whoAmI = 'portletA.next';
+    $scope.begin = function() {
+        $state.go('portletA-begin');
+    };
 };
 
 
